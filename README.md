@@ -20,6 +20,8 @@ It has no dependencies and neatly integrates into the STL by taking advantage of
 
 The documentation is available on the [home page](https://dervis.de/linq).
 
+- [Try it on Compiler Explorer](https://godbolt.org/z/zeWTdP6fd)
+
 ## Example
 
 ```cpp linenums="1"
