@@ -1,4 +1,9 @@
 .idea/
+.qtcreator/
+.vscode/
+.vs/
 cmake-build-*/
 build/
 site/
+trace.json
+.DS_Store

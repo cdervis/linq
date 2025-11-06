@@ -1,28 +1,27 @@
 ---
-title: Home
+title: linq
 ---
 
 # linq - LINQ for C++
 
-![logo](img/logo.png)
+![logo](assets/logo.png){width=80}
 
 linq is a minimalistic, header-only LINQ library for C++ 17 and newer.
 
 It has no dependencies and neatly integrates into the STL by taking advantage of modern C++ features.
 
-- offers a simpler alternative to C++20 `<ranges>`
-- resolves all type related functionality at compile-time; no virtual dispatch is used
-- uses lazy evaluation, so your queries still work even after you modify the container they're based on
-- focuses on immutability, so your queries stay predictable by minimizing surprising side-effects
-- is efficient in the way it works with your data; it avoids copies and instead moves data wherever it can
-- generates an operation chain at compile-time (supports `constexpr`)
-- works with all generic container types, not just the STL
+- Offers a simpler alternative to C++20 `#!cpp <ranges>`
+- Resolves all type related functionality at compile-time; no virtual dispatch is used
+- Uses lazy evaluation, so your queries still work even after you modify the container they're based on
+- Focuses on immutability, so your queries stay predictable by minimizing surprising side-effects
+- Is efficient in the way it works with your data, avoiding copies and instead moves data when possible
+- Generates an operation chain at compile-time (supports `#!cpp constexpr`)
+- Works with all generic container types, not just the STL
 
 ---
 
 - [Download](https://github.com/cdervis/linq/archive/refs/tags/v0.9.0.zip) :octicons-download-16:
 - [Try it on Compiler Explorer](https://godbolt.org/z/193YjTebf) :octicons-link-external-16:
-- [GitHub](https://github.com/cdervis/linq) :octicons-link-external-16:
 - [License](license.md) :material-copyright:
 
 ---
@@ -204,7 +203,7 @@ It has no dependencies and neatly integrates into the STL by taking advantage of
 
 ### Option 1 (Direct, recommended)
 
-You can simply copy `linq.hpp` into your source tree and then `#include <linq.hpp>` to use linq directly.
+You can simply copy `linq.hpp` into your source tree and then `#!cpp #include <linq.hpp>` to use linq directly.
 
 ### Option 2 (CMake)
 

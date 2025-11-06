@@ -175,7 +175,7 @@ constexpr auto sum = linq::from( &nums )
 static_assert( sum == 9 ); // 2 + 3 + 4
 
 constexpr auto letters = std::array{ 'h', 'e', 'l', 'l', 'o', ' ',
-'w', 'o', 'r', 'l', 'd' };
+                                     'w', 'o', 'r', 'l', 'd' };
 
 const auto words = linq::from( &letters )
 .select_to_string()
